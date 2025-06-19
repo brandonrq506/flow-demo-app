@@ -47,6 +47,7 @@ export const PackageForm = ({ initialValues, onSubmit }: Props) => {
 
       <TextInput
         label="Name"
+        autoFocus
         registration={register("name", { required: "Name is required" })}
         error={errors.name?.message}
       />

@@ -25,7 +25,7 @@ export const StateCheckbox = ({
     <Field className={clsx("flex items-center gap-2", className)}>
       <HeadlessCheckbox
         {...props}
-        className="group block size-4 rounded border border-gray-300 bg-white data-checked:border-indigo-600 data-checked:bg-indigo-600 data-disabled:border-gray-300 data-disabled:bg-gray-100 data-disabled:checked:bg-gray-100">
+        className="group block size-4 rounded border border-gray-300 bg-white data-checked:border-indigo-600 data-checked:bg-indigo-600 data-disabled:cursor-not-allowed data-disabled:border-gray-300 data-disabled:bg-gray-100 data-disabled:checked:bg-gray-100">
         <svg
           className="stroke-white opacity-0 group-data-checked:opacity-100"
           viewBox="0 0 14 14"
