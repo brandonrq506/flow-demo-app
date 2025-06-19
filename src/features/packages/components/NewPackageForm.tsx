@@ -8,8 +8,8 @@ export const NewPackageForm = () => {
   const navigate = useNavigate();
   const { mutateAsync } = useCreatePackage();
 
-  const onSubmit = async (form: PackageFormType) => {
-    await mutateAsync(form);
+  const onSubmit = async (formValues: PackageFormType) => {
+    await mutateAsync(formValues);
     navigate("..");
   };
 

@@ -14,10 +14,10 @@ export const EditPackageForm = ({ packageId, fitPackage }: Props) => {
   const navigate = useNavigate();
   const { mutateAsync } = useUpdatePackage();
 
-  const onSubmit = async (value: PackageFormType) => {
+  const onSubmit = async (formValues: PackageFormType) => {
     await mutateAsync({
       packageId,
-      fitPackage: value,
+      fitPackage: formValues,
     });
 
     navigate("..");
